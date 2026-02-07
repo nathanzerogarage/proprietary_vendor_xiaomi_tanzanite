@@ -721,7 +721,6 @@ PRODUCT_PACKAGES += \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
     libAVCSecureVencCA \
-    libaedv \
     libbwc \
     libgz_gp_client \
     libgz_uree \
