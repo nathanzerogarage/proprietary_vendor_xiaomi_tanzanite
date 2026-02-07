@@ -1698,7 +1698,13 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
+    libaudiotoolkit \
     libcomutils \
+    libem_aoltest_jni \
+    libem_audio_jni \
+    libem_bleoffload_jni \
+    libem_support_jni \
+    libem_wifi_jni \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -1715,6 +1721,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0 \
     JVFactoryTest_O7 \
     goodix_sz_miui \
+    EngineerMode \
     ImsService \
     mediatek-common \
     mediatek-framework \

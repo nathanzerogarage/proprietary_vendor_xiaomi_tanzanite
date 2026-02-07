@@ -28763,6 +28763,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudiotoolkit",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libaudiotoolkit.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libaudioclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcomutils",
     owner: "xiaomi",
     strip: {
@@ -28781,6 +28809,155 @@ cc_prebuilt_library_shared {
                 "libmedia",
                 "liblog",
                 "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libem_aoltest_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libem_aoltest_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libandroid_runtime",
+                "libutils",
+                "libui",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libem_audio_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libem_audio_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libandroid_runtime",
+                "libutils",
+                "libui",
+                "libcutils",
+                "libaudioclient",
+                "liblog",
+                "libaudiotoolkit",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libem_bleoffload_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libem_bleoffload_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libandroid_runtime",
+                "libutils",
+                "libui",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libem_support_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libem_support_jni.so",
+            ],
+            shared_libs: [
+                "libandroid_runtime",
+                "liblog",
+                "libutils",
+                "libgui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libem_wifi_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libem_wifi_jni.so",
+            ],
+            shared_libs: [
+                "libandroid_runtime",
+                "libui",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -29282,6 +29459,17 @@ android_app_import {
         enabled: false,
     },
     soc_specific: true,
+}
+
+android_app_import {
+    name: "EngineerMode",
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/app/EngineerMode/EngineerMode.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    system_ext_specific: true,
 }
 
 android_app_import {
