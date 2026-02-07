@@ -756,6 +756,7 @@ PRODUCT_PACKAGES += \
     APUWareHmpServer \
     APUWareUtilsServer \
     anc.hal \
+    android.hardware.security.keymint-V3-ndk-v34 \
     com.xiaomi.plugin.capbokeh \
     com.xiaomi.plugin.memcpy \
     com.xiaomi.plugin.mibokeh \
