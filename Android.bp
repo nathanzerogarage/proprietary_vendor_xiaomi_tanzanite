@@ -30398,12 +30398,11 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mtk_agpsd",
             ],
             shared_libs: [
-                "libssl-v32",
                 "libcutils",
                 "liblog",
                 "libutils",
                 "libandroid_net",
-                "libcrypto-v32",
+                "libcrypto-v33",
                 "libexpat",
                 "libssl",
                 "libc++",
