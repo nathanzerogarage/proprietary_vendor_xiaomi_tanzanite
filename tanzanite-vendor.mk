@@ -608,9 +608,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
@@ -1117,7 +1114,6 @@ PRODUCT_PACKAGES += \
     libminiui \
     libmipc \
     libmisight \
-    libmisound \
     libmisoundcrossfade \
     libmmagent \
     libmml \
@@ -1636,7 +1632,6 @@ PRODUCT_PACKAGES += \
     sc202v_truly_macro_mipi_raw_IdxMgr \
     sc202v_truly_macro_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
-    libmisoundfx \
     libswdap \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.dolby.hardware.dms@2.0 \
